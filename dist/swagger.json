@@ -7,7 +7,26 @@
 	"info": {
 		"title": ""
 	},
-	"paths": {},
+	"paths": {
+		"/api/v1/example": {
+			"get": {
+				"operationId": "Example",
+				"produces": [
+					"application/json"
+				],
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"schema": {
+							"type": "object"
+						}
+					}
+				},
+				"security": [],
+				"parameters": []
+			}
+		}
+	},
 	"produces": [
 		"application/json"
 	],

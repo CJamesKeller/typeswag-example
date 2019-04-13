@@ -1,13 +1,12 @@
 import 'module-alias/register';
 import 'reflect-metadata';
-import './controllers/example/index.ts';
 import * as express from 'express';
 import * as helmet from 'helmet';
 import { Express } from 'express';
 import { useExpressServer } from 'routing-controllers';
 import { generateSwagger } from './generateSwagger';
 import { CustomErrorHandler } from './ErrorHandler';
-import { Example } from '@controllers/index';
+import { Example } from './controllers/index';
 
 const port = process.env.PORT || 3000;
 
