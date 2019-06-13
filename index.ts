@@ -1,26 +1,20 @@
-import 'module-alias/register';
 import 'reflect-metadata';
 import * as express from 'express';
-import * as helmet from 'helmet';
 import { Express } from 'express';
 import { useExpressServer } from 'routing-controllers';
 import { generateSwagger } from './generateSwagger';
-import { CustomErrorHandler } from './ErrorHandler';
 import { Example } from './controllers/index';
 
 const port = process.env.PORT || 3000;
 
 const app: Express = express();
 app.set('port', port);
-app.use(helmet());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 const serverConfig = {
-  controllers: [Example],
-  defaultErrorHandler: false,
-  middlewares: [CustomErrorHandler]
-}
+  controllers: [Example]
+};
 
 useExpressServer(app, serverConfig);
 generateSwagger();

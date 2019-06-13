@@ -4,29 +4,20 @@
   "description": "Typeswag example repo",
   "main": "index.ts",
   "scripts": {
-    "start": "ts-node-dev --no-notify ./index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "ts-node-dev --no-notify ./index.ts"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cors": "^2.8.5",
     "express": "^4.16.4",
-    "helmet": "^3.16.0",
-    "module-alias": "^2.2.0",
     "reflect-metadata": "^0.1.13",
     "routing-controllers": "^0.7.7",
     "typeswag": "^1.0.2"
   },
   "devDependencies": {
-    "@types/cors": "^2.8.4",
     "@types/express": "^4.16.1",
-    "@types/helmet": "0.0.43",
     "@types/node": "^11.13.4",
     "ts-node-dev": "^1.0.0-pre.32",
     "typescript": "^3.4.3"
-  },
-  "_moduleAliases": {
-    "@controllers": "./controllers"
   }
 }

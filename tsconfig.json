@@ -1,18 +1,14 @@
 {
   "compilerOptions": {
-      "noImplicitAny": true,
-      "forceConsistentCasingInFileNames": true,
-      "noImplicitReturns": true,
-      "strict": true,
-      "noUnusedLocals": true,
-      "moduleResolution": "node",
-      "baseUrl": "./",
-      "target": "ES5",
-      "experimentalDecorators": true,
-      "emitDecoratorMetadata": true,
-      "resolveJsonModule": true,
-      "paths": {
-          "@controllers/*": ["controllers/*"]
-      }
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "target": "ES6",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "resolveJsonModule": true
   }
 }
