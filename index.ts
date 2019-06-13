@@ -19,6 +19,8 @@ const serverConfig = {
 useExpressServer(app, serverConfig);
 generateSwagger();
 
+app.use('/swagger', express.static('./dist/swagger.json'));
+
 app.listen(port, () => console.info(`Listening on port ${port}`));
 
 export { app };
